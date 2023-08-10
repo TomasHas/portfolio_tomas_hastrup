@@ -9,7 +9,10 @@ import storeStep from "../assets/storeStep.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects" className=" max-w-[1040px] m-auto md:pl-20 p-4 py-10">
+    <div
+      id="projects"
+      className="h-screen max-w-[1040px] m-auto md:pl-20 p-4 py:16"
+    >
       <h1 className=" text-4xl font-bold text-center text-black">Projects</h1>
       <p className=" text-center py-8">
         ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor

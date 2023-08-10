@@ -2,10 +2,10 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import {
-  FaTwitter,
-  FaFacebook,
+  // FaTwitter,
+  // FaFacebook,
   FaGithub,
-  FaInstagram,
+  // FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
 import IMG_6569 from "../assets/IMG_6569.jpg";
@@ -46,13 +46,15 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className=" flex justify-between pt-6 max-w-[200px] w-full">
-            <FaTwitter className=" cursor-pointer" size={20} />
-            <FaFacebook className=" cursor-pointer" size={20} />
-            <FaInstagram className=" cursor-pointer" size={20} />
-
-            <FaGithub className=" cursor-pointer" size={20} />
-            <FaLinkedinIn className=" cursor-pointer" size={20} />
+          <div className=" flex justify-between pt-3 max-w-[200px] w-20 ">
+            <a href="https://github.com/TomasHas">
+              <FaGithub className=" cursor-pointer" size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/tomas-hastrup-1a28a413/ ">
+              <FaLinkedinIn className=" cursor-pointer" size={20} />
+            </a>
+            {/* <a href="">
+            <FaInstagram className=" cursor-pointer" size={20} /></a> */}
           </div>
         </div>
       </div>

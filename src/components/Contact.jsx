@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className=" flex flex-col items-center
+      className=" h-screen flex flex-col items-center
        max-w-[1040px] m-auto md:pl-20 p-4 py16
     "
     >
