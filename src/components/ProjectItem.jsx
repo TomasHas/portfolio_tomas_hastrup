@@ -2,7 +2,7 @@
 import React from "react";
 
 // eslint-disable-next-line react/prop-types
-const ProjectItem = ({ img, title, src }) => {
+const ProjectItem = ({ img, title }) => {
   return (
     <div className=" relative flex items-center justify-center h-auto w-auto shadow-lg shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-blue-900">
       <img src={img} alt="/" className=" rounded-xl group-hover:opacity-10  " />

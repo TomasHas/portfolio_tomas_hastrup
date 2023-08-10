@@ -8,35 +8,32 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import IMG_6569 from "../assets/IMG_6569.jpg";
 
 const Main = () => {
   return (
     <div id="main">
       <img
         className=" w-full h-screen object-cover object-left scale-x-[-1]"
-        src="https://media.istockphoto.com/id/1280157339/es/foto/vista-a%C3%A9rea-del-bosque-de-hierba-verde-con-pinos-altos-y-r%C3%ADo-azul-curvado-que-fluye-a-trav%C3%A9s.jpg?s=1024x1024&w=is&k=20&c=nKY9po0RQvZGgx90jUWfPYhli7MT5ULymMFw0lod8mE="
+        src={IMG_6569}
         alt="no pic"
       />
       <div className=" w-full h-screen absolute top-0 left-0 bg-white opacity-70">
         <div className=" max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">
           <h1 className=" sm:text-5xl text-4xl font-bold text-gray-900">
-            I´m Tomas
+            I´m Tomas Hastrup
           </h1>{" "}
           <h2 className=" flex sm:text-3xl text-2xl p-4 text-gray-800">
             I
             <TypeAnimation
               sequence={[
-                "´m a developer",
+                "´m a web developer",
                 2000,
-                " ´m bilingual",
+                " speak fluent english",
                 2000,
-                " have a background in Marketing",
+                " have a background in marketing",
                 2000,
-                " ´m a coder",
-                2000,
-                "´m a sports enthusiast",
-                2000,
-                "got 99 problems... and solved every one.",
+                "´m a outdoor enthusiast",
                 2000,
               ]}
               wrapper="span"
