@@ -19,12 +19,13 @@ const SideNav = () => {
     <div className="">
       <AiOutlineMenu
         onClick={handleNav}
-        className=" absolute top-4 right-4 z-[99] md:hidden sm:hidden "
+        className=" fixed  h-8 w-8  top-4 left-4 z-[99] md:hidden sm:hidden "
       />
       {nav ? (
         <div className="fixed  w-full h-screen bg-white/90  flex flex-col justify-center items-center z-20">
           <a
-            href="main"
+            onClick={handleNav}
+            href="#main"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <AiOutlineHome size={20} />
@@ -48,7 +49,7 @@ const SideNav = () => {
           </a>{" "}
           <a
             onClick={handleNav}
-            href="main"
+            href="#resume"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <BsPerson size={20} />
@@ -66,7 +67,7 @@ const SideNav = () => {
       ) : (
         ""
       )}
-      <div className=" md:block sm:block hidden fixed top-[25%] z-10">
+      <div className=" md:block sm:block hidden fixed top-[20%] z-10">
         <div className=" flex flex-col ">
           <a
             href="#main"

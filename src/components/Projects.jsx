@@ -11,13 +11,12 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="h-screen max-w-[1040px] m-auto md:pl-20 p-4 py:16"
+      className="flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4 "
     >
       <h1 className=" text-4xl font-bold text-center text-black">Projects</h1>
       <p className=" text-center py-8">
-        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor
-        at architecto aspernatur a neque, magni numquam aut expedita ad vel
-        nobis ab doloremque doloribus quia, exercitationem hic quam aliquid.
+        Step by Step is the project we built to graduate from Henry Bootcamp.
+        I´ll be uploading new projects soon.
       </p>
       <div className=" grid sm:grid-cols-2 gap-12">
         <ProjectItem
@@ -28,6 +27,9 @@ const Projects = () => {
         <ProjectItem img={brandsStep} title={"Step by Step"} />
 
         <ProjectItem img={storeStep} title={"Step by Step"} />
+        <ProjectItem img={brandsStep} title={"Step by Step"} />
+        <ProjectItem img={brandsStep} title={"Step by Step"} />
+
         <ProjectItem img={brandsStep} title={"Step by Step"} />
       </div>
     </div>

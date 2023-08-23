@@ -3,6 +3,12 @@ import React from "react";
 import WorkItem from "./WorkItem";
 const data = [
   {
+    duration: "2023 - Actual",
+    company: "FREELANCE",
+    title: "Full Stack Web Developer",
+    details: "Freelance web development",
+  },
+  {
     duration: "2020 - Actual",
     company: "PASIÓN EVENTOS",
     title: "Producción y Logística",
@@ -21,7 +27,7 @@ const data = [
     details: "Carrera de obstáculos de 10k",
   },
   {
-    duration: "2020 - Actual",
+    duration: "2011 - 2012",
     company: "COLCAR MERBUS S.A.",
     title: "Marketing Manager",
     details: "Concesionario Mercedes-Benz",
@@ -38,19 +44,21 @@ const Work = () => {
   return (
     <div
       id="work"
-      className=" h-screen max-w-[1040px] m-auto md:pl-20 p-4 py:16"
+      className="flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4"
     >
-      <h1 className=" text-4xl font-bold text-center text-black">Work</h1>
-
-      {data.map((item, idx) => (
-        <WorkItem
-          key={idx}
-          duration={item.duration}
-          title={item.title}
-          company={item.company}
-          details={item.details}
-        />
-      ))}
+      <h1 className="  text-4xl font-bold text-center text-black">Work</h1>
+      <div className=" py-14">
+        {" "}
+        {data.map((item, idx) => (
+          <WorkItem
+            key={idx}
+            duration={item.duration}
+            title={item.title}
+            company={item.company}
+            details={item.details}
+          />
+        ))}
+      </div>
     </div>
   );
 };
