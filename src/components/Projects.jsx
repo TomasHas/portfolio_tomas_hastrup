@@ -2,7 +2,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import HomeStep from "../assets/HomeStep.jpg";
-
 import alpha from "../assets/alpha1.jpg";
 import and from "../assets/and.jpg";
 const Projects = () => {
