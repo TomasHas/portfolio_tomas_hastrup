@@ -3,6 +3,12 @@ import React from "react";
 import WorkItem from "./WorkItem";
 const data = [
   {
+    duration: "8/2023 - 11/2023",
+    company: "AYTHEN",
+    title: "Full Stack Web Developer",
+    details: "Internship",
+  },
+  {
     duration: "2023 - Actual",
     company: "FREELANCE",
     title: "Full Stack Web Developer",
@@ -12,31 +18,31 @@ const data = [
     duration: "2020 - Actual",
     company: "PASIÓN EVENTOS",
     title: "Producción y Logística",
-    details: "Coordinar recursos durante eventos",
+    details: "Sports events logistics",
   },
   {
     duration: "2017 – 2020",
     company: "MERVE TEXTIL",
     title: "Socio / Fundador",
-    details: "Importación de telas para ventas mayoristas y minoristas.",
+    details: "Textile trading",
   },
   {
     duration: "2012 – 2016",
     company: "BARBARIAN RACE",
     title: "Creador / Director General ",
-    details: "Carrera de obstáculos de 10k",
+    details: "Obstacle course Race",
   },
   {
     duration: "2011 - 2012",
     company: "COLCAR MERBUS S.A.",
     title: "Marketing Manager",
-    details: "Concesionario Mercedes-Benz",
+    details: "Mercedes-Benz dealership",
   },
   {
     duration: "2006 - 2010",
     company: "DAIMLERCHRYSLER ARGENTINA",
     title: "Marketing Manager",
-    details: "Terminal automotriz",
+    details: "Automotive corporation",
   },
 ];
 

@@ -3,10 +3,10 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import HomeStep from "../assets/HomeStep.jpg";
 
-import brandsStep from "../assets/brandsStep.jpg";
+// import brandsStep from "../assets/brandsStep.jpg";
 
-import storeStep from "../assets/storeStep.jpg";
-
+import alpha from "../assets/alpha1.JPG";
+import and from "../assets/and.JPG";
 const Projects = () => {
   return (
     <div
@@ -24,13 +24,16 @@ const Projects = () => {
           title={"Step by Step"}
           src={"https://step-by-step-pi.vercel.app/"}
         />
-        <ProjectItem img={brandsStep} title={"Step by Step"} />
-
-        <ProjectItem img={storeStep} title={"Step by Step"} />
-        <ProjectItem img={brandsStep} title={"Step by Step"} />
-        <ProjectItem img={brandsStep} title={"Step by Step"} />
-
-        <ProjectItem img={brandsStep} title={"Step by Step"} />
+        <ProjectItem
+          img={alpha}
+          title={"Interview Project"}
+          src={"https://alpha-seven-eosin.vercel.app/"}
+        />
+        <ProjectItem
+          img={and}
+          title={"Freelance Project"}
+          src={"https://schein-esquivel.vercel.app/"}
+        />
       </div>
     </div>
   );

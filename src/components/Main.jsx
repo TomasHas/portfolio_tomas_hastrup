@@ -18,7 +18,7 @@ const Main = () => {
         src={IMG_6569}
         alt="no pic"
       />
-      <div className=" w-full h-screen absolute top-0 left-0 bg-white opacity-70">
+      <div className=" w-full h-screen absolute top-0 left-0 bg-orange-300 opacity-70">
         <div className=" max-w-[1040px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">
           <h1 className=" sm:text-5xl text-4xl font-bold text-gray-900">
             I´m Tomas Hastrup
