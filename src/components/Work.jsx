@@ -9,27 +9,27 @@ const data = [
     details: "Internship",
   },
   {
-    duration: "2023 - Actual",
+    duration: "2023 - Current",
     company: "FREELANCE",
     title: "Full Stack Web Developer",
     details: "Freelance web development",
   },
   {
-    duration: "2020 - Actual",
+    duration: "2020 - Current",
     company: "PASIÓN EVENTOS",
-    title: "Producción y Logística",
+    title: "Production y Logístics",
     details: "Sports events logistics",
   },
   {
     duration: "2017 – 2020",
     company: "MERVE TEXTIL",
-    title: "Socio / Fundador",
+    title: "Founding Partner",
     details: "Textile trading",
   },
   {
     duration: "2012 – 2016",
     company: "BARBARIAN RACE",
-    title: "Creador / Director General ",
+    title: "Creator/Director",
     details: "Obstacle course Race",
   },
   {

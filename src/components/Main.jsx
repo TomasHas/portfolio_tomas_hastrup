@@ -27,7 +27,7 @@ const Main = () => {
             I
             <TypeAnimation
               sequence={[
-                "´m a web developer",
+                "´m a full stack web developer",
                 2000,
                 " speak fluent english",
                 2000,
