@@ -29,9 +29,9 @@ const Main = () => {
               sequence={[
                 "´m a full stack web developer",
                 2000,
-                " speak fluent english",
-                2000,
                 " have a background in marketing",
+                2000,
+                " speak fluent english",
                 2000,
                 "´m a outdoor enthusiast",
                 2000,
