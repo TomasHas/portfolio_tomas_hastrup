@@ -4,8 +4,8 @@ import ProjectItem from "./ProjectItem";
 import HomeStep from "../assets/HomeStep.jpg";
 import alpha from "../assets/alpha1.jpg";
 import and from "../assets/and.jpg";
-import pokemon from "../assets/pokemon.JPG";
-import petVenture from "../assets/petVenture.JPG";
+import pokemon from "../assets/pokemon.jpg";
+import petVenture from "../assets/petVenture.jpg";
 const Projects = () => {
   return (
     <div
