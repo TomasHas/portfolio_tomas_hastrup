@@ -1,7 +1,7 @@
 import { GrDocumentDownload } from "react-icons/gr";
 // import { MdPageview } from "react-icons/md";
 import { LuFileSearch } from "react-icons/lu";
-import resume from "../assets/TOMAS HASTRUP resume 2023.pdf";
+import resume from "../../public/assets/TOMAS HASTRUP resume 2023.pdf";
 import { useState } from "react";
 
 const Resume = () => {

@@ -8,7 +8,7 @@ import {
   // FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import IMG_6569 from "../assets/IMG_6569.jpg";
+import IMG_6569 from "../../public/assets/IMG_6569.jpg";
 
 const Main = () => {
   return (
