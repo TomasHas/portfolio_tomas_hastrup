@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import HomeStep from "../assets/HomeStep.jpg";
-import alpha from "../assets/alpha1.jpg";
-import and from "../assets/and.jpg";
-import pokemon from "../assets/pokemon.jpg";
-import petVenture from "../assets/petVenture.jpg";
+
+import HomeStep from "../../public/assets/HomeStep.jpg";
+import alpha from "../../public/assets/alpha1.jpg";
+import and from "../../public/assets/and.jpg";
+import pokemon from "../../public/assets/pokemon.jpg";
+import petVenture from "../../public/assets/petVenture.jpg";
 const Projects = () => {
   return (
     <div
