@@ -4,6 +4,8 @@ import ProjectItem from "./ProjectItem";
 import HomeStep from "../assets/HomeStep.jpg";
 import alpha from "../assets/alpha1.jpg";
 import and from "../assets/and.jpg";
+import Captura from "../assets/Captura.JPG";
+import petVenture from "../assets/petVenture.JPG";
 const Projects = () => {
   return (
     <div
@@ -30,6 +32,16 @@ const Projects = () => {
           img={and}
           title={"Freelance Project"}
           src={"https://schein-esquivel.vercel.app/"}
+        />
+        <ProjectItem
+          img={Captura}
+          title={"Bootcamp Project"}
+          src={"https://pokemon-nextjs-virid.vercel.app/"}
+        />
+        <ProjectItem
+          img={petVenture}
+          title={"Pet Venture Project"}
+          src={"https://pet-venture-2-git-develop-jesusegomez.vercel.app/"}
         />
       </div>
     </div>
