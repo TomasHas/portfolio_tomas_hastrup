@@ -6,7 +6,7 @@ import {
   AiOutlineProject,
   AiOutlineMail,
 } from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
+// import { BsPerson } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
 const SideNav = () => {
   const [nav, setNav] = useState(false);
@@ -17,12 +17,11 @@ const SideNav = () => {
 
   return (
     <div className="">
-      <AiOutlineMenu
-        onClick={handleNav}
-        className=" fixed  h-8 w-8  top-4 left-4 z-[99] md:hidden sm:hidden "
-      />
+      <div className=" fixed  p-2 flex  w-full  top-0 opacity-50 left-0 z-[99] md:hidden sm:hidden">
+        <AiOutlineMenu onClick={handleNav} className=" fill-white h-10 w-10 " />
+      </div>
       {nav ? (
-        <div className="fixed  w-full h-screen bg-white/90  flex flex-col justify-center items-center z-20">
+        <div className="fixed  w-full h-screen bg-white/90  flex flex-col justify-start items-center z-20">
           <a
             onClick={handleNav}
             href="#main"
@@ -47,14 +46,14 @@ const SideNav = () => {
             <AiOutlineProject size={20} />
             <span className=" pl-4 ">Projects</span>
           </a>{" "}
-          <a
+          {/* <a
             onClick={handleNav}
             href="#resume"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <BsPerson size={20} />
             <span className=" pl-4 ">Resume</span>
-          </a>
+          </a> */}
           <a
             onClick={handleNav}
             href="#contact"
