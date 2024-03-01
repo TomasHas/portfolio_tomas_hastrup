@@ -11,18 +11,18 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="  flex flex-col   h-40 s m-auto md:pl-20  bg-gray-600"
+      className="  flex flex-col h-64  md:h-40 s m-auto md:pl-20  bg-gray-600"
     >
       <div className="  flex h-screen flex-col justify-center items-center ">
         <div className="  inset-x-0 top-0  flex  flex-col justify-start">
           {" "}
-          <h1 className=" text-4xl font-bold text-center text-gray-300 ">
+          <h1 className=" text-4xl hidden p-4 font-bold md:block text-center text-gray-300 ">
             {" "}
             Contact
           </h1>
         </div>
 
-        <div className=" h-1/2 flex  flex-row justify-center items-center gap-5 text-gray-300 ">
+        <div className=" h-1/2 flex flex-col md:flex-row justify-center items-center gap-5 text-gray-300 ">
           <a
             href="https://github.com/TomasHas"
             className="flex flex-row items-center gap-2 hover:text-blue-600"
