@@ -2,47 +2,79 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
-import HomeStep from "../../public/assets/HomeStep.jpg";
-import alpha from "../../public/assets/alpha1.jpg";
-import and from "../../public/assets/and.jpg";
-import pokemon from "../../public/assets/pokemon.jpg";
-import petVenture from "../../public/assets/petVenture.jpg";
+import HomeStep from "./../assets/HomeStep.jpg";
+import alpha from "./../assets/alpha1.jpg";
+import and from "./../assets/and.jpg";
+import pokemon from "./../assets/pokemon.jpg";
+import petVenture from "./../assets/petVenture.jpg";
+
 const Projects = () => {
   return (
     <div
       id="projects"
       className="flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4 "
     >
-      <h1 className=" text-4xl font-bold text-center text-black">Projects</h1>
-      <p className=" text-center py-8">
-        Step by Step is the project we built to graduate from Henry Bootcamp.
-        I´ll be uploading new projects soon.
-      </p>
+      <h1 className=" text-4xl font-bold text-center text-gray-400 mt-7">
+        Projects
+      </h1>
+      <p className=" text-center py-8  text-gray-200"></p>
       <div className=" grid sm:grid-cols-2 gap-12">
         <ProjectItem
           img={HomeStep}
           title={"Step by Step"}
           src={"https://step-by-step-pi.vercel.app/"}
+          text="Henry Bootcamp Final Group Project."
+          stack={[
+            "javascript",
+            "vite",
+            "css",
+            "mercadoPago",
+            "auth0",
+            "sequelize",
+            "postgres",
+            "daisyUi",
+            "redux",
+            "mui",
+            "express",
+          ]}
         />
         <ProjectItem
           img={alpha}
-          title={"Interview Project"}
+          title={"vanilla"}
           src={"https://alpha-seven-eosin.vercel.app/"}
+          text="Interview Challenge"
+          stack={["javascript", "html", "css"]}
         />
         <ProjectItem
           img={and}
-          title={"Freelance Project"}
+          title={"Freelance Dummy Project"}
           src={"https://schein-esquivel.vercel.app/"}
+          text="Dummy website for architecture firm. Work in progress."
+          stack={["javascript", "vite", "css"]}
         />
         <ProjectItem
           img={pokemon}
           title={"Bootcamp Project"}
           src={"https://pokemon-nextjs-virid.vercel.app/"}
+          text="Henry Bootcamp Project. Work in progress."
+          stack={["javascript", "next", "tailwind", "postgres", "prisma"]}
         />
         <ProjectItem
           img={petVenture}
           title={"Pet Venture Project"}
           src={"https://pet-venture-2-git-develop-jesusegomez.vercel.app/"}
+          text="Henry Bootcamp Final Group Project #2. Unfinished."
+          stack={[
+            "javascript",
+            "next",
+            "css",
+            "mercadoPago",
+            "sequelize",
+            "postgres",
+            "redux",
+            "mui",
+            "express",
+          ]}
         />
       </div>
     </div>

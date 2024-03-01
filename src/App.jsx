@@ -3,16 +3,16 @@ import SideNav from "./components/SideNav";
 import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+// import Resume from "./components/Resume";
 
 function App() {
   return (
-    <div className="">
+    <div className=" bg-gray-900">
       <SideNav />
       <Main />
-      <Work />
       <Projects />
-      <Resume />
+      <Work />
+      {/* <Resume /> */}
       <Contact />
     </div>
   );

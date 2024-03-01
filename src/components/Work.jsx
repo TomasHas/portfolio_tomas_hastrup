@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import WorkItem from "./WorkItem";
+import Resume from "./Resume";
 const data = [
   {
     duration: "8/2023 - 11/2023",
@@ -50,9 +51,11 @@ const Work = () => {
   return (
     <div
       id="work"
-      className="flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4"
+      className="flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4 "
     >
-      <h1 className="  text-4xl font-bold text-center text-black">Work</h1>
+      <h1 className="  text-4xl font-bold text-center mt-7 text-gray-400">
+        Work History
+      </h1>
       <div className=" py-14">
         {" "}
         {data.map((item, idx) => (
@@ -65,6 +68,7 @@ const Work = () => {
           />
         ))}
       </div>
+      <Resume />
     </div>
   );
 };

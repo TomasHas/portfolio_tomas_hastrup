@@ -87,12 +87,12 @@ const SideNav = () => {
           >
             <AiOutlineProject size={20} />
           </a>{" "}
-          <a
+          {/* <a
             href="#resume"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
           >
             <BsPerson size={20} />
-          </a>{" "}
+          </a>{" "} */}
           <a
             href="#contact"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
