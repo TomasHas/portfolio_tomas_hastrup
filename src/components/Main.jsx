@@ -34,13 +34,13 @@ const Main = () => {
             <h2 className=" flex sm:text-3xl text-2xl pt-4 text-gray-300">
               <TypeAnimation
                 sequence={[
-                  "I´m a full stack web developer",
+                  "I´m a Full Stack Web Developer",
                   2000,
-                  "I also have background in marketing",
+                  "with over 2 years of experience",
                   2000,
-                  "and I speak fluent english",
+                  "living in Argentina and speak fluent in english",
                   2000,
-                  "I like sports and the outdoors",
+                  "and also have background in marketing",
                   2000,
                 ]}
                 wrapper="span"
