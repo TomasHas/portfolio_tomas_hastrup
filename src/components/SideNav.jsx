@@ -7,16 +7,17 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 // import { BsPerson } from "react-icons/bs";
-import { GrProjects } from "react-icons/gr";
+import { MdOutlineGridView } from "react-icons/md";
 const SideNav = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
-
+  const buttonStyle =
+    "w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-gray-400 shadow-lg shadow-orange-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100";
   return (
-    <div className="">
+    <div>
       <div className=" fixed  p-2 flex  w-full  top-0 opacity-50 left-0 z-[99] md:hidden sm:hidden">
         <AiOutlineMenu onClick={handleNav} className=" fill-white h-10 w-10 " />
       </div>
@@ -35,7 +36,7 @@ const SideNav = () => {
             href="#work"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
-            <GrProjects size={20} />
+            <AiOutlineProject size={20} />
             <span className=" pl-4 ">Work</span>
           </a>{" "}
           <a
@@ -57,7 +58,7 @@ const SideNav = () => {
           <a
             onClick={handleNav}
             href="#contact"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-00 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <AiOutlineMail size={20} />
             <span className=" pl-4 ">Contact</span>
@@ -70,32 +71,23 @@ const SideNav = () => {
         <div className=" flex flex-col ">
           <a
             href="#main"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
+            className="w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-gray-400 shadow-lg shadow-orange-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <AiOutlineHome size={20} />
           </a>
-          <a
-            href="#work"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
-          >
-            <GrProjects size={20} />
+          <a href="#work" className={buttonStyle}>
+            <MdOutlineGridView size={20} />
           </a>{" "}
-          <a
-            href="#projects"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
-          >
+          <a href="#projects" className={buttonStyle}>
             <AiOutlineProject size={20} />
           </a>{" "}
           {/* <a
             href="#resume"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
+            className={buttonStyle}
           >
             <BsPerson size={20} />
           </a>{" "} */}
-          <a
-            href="#contact"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 cursor-pointer m-2 hover:scale-110 ease-in duration-300"
-          >
+          <a href="#contact" className={buttonStyle}>
             <AiOutlineMail size={20} />
           </a>
         </div>

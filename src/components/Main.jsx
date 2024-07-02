@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import {
   // FaTwitter,
@@ -8,20 +8,53 @@ import {
   // FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-
+import NightModeToggler from "./NightModeToggler";
 import sun from "./../assets/sun.jpg";
+import moon from "./../assets/moon.webp";
 
 const Main = () => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    // Select the <html> element
+    const htmlElement = document.documentElement;
+
+    // Create a MutationObserver instance and define the callback function
+    const observer = new MutationObserver((mutationsList) => {
+      for (let mutation of mutationsList) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          console.log("Class attribute changed!");
+          if (htmlElement.classList.contains("dark")) {
+            setTheme("dark");
+            console.log("Dark mode enabled");
+          } else {
+            setTheme("light");
+            console.log("Dark mode disabled");
+          }
+        }
+      }
+    });
+
+    // Configure the observer to listen for attribute changes
+    const config = { attributes: true };
+
+    // Start observing the <html> element
+    observer.observe(htmlElement, config);
+
+    // Cleanup function to disconnect the observer when the component unmounts
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <div
-      id="main"
-      className="relative
-    "
-    >
+    <div id="main" className=" relative">
       <div className=" ">
         <img
           className=" w-full h-screen object-cover object-left scale-x-[-1]  "
-          src={sun}
+          src={theme === "light" ? sun : moon}
           alt="no pic"
         />
       </div>
@@ -38,10 +71,12 @@ const Main = () => {
                   2000,
                   "with over 2 years of experience",
                   2000,
-                  "living in Argentina and speak fluent in english",
+                  "living in Argentina ",
                   2000,
-                  "and also have background in marketing",
+                  "and I speak fluent english",
                   2000,
+                  // "and also have background in marketing",
+                  // 2000,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -56,16 +91,17 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-row items-center absolute bottom-2 right-6 w-48 fill-gray-300 gap-5">
+      <NightModeToggler />
+      <div className=" flex flex-row items-center absolute bottom-2 right-6  fill-gray-300 gap-5">
         <a href="https://github.com/TomasHas">
           <FaGithub
-            className=" cursor-pointer fill-gray-300 hover:fill-gray-700"
+            className=" cursor-pointer fill-gray-300 hover:fill-white"
             size={40}
           />
         </a>
         <a href="https://www.linkedin.com/in/tomas-hastrup-1a28a413/ ">
           <FaLinkedinIn
-            className=" cursor-pointer fill-gray-300  hover:fill-gray-700"
+            className=" cursor-pointer fill-gray-300  hover:fill-white"
             size={40}
           />
         </a>

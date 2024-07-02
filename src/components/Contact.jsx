@@ -31,14 +31,13 @@ function Contact() {
           </a>
           <a
             href="https://www.linkedin.com/in/tomas-hastrup-1a28a413/"
-            className="flex flex-row gap-2 items-center  hover:text-blue-600"
+            className="flex flex-row gap-1 items-center  hover:text-blue-600"
           >
-            -
-            <FaLinkedinIn /> <h3>LinkedIn</h3>
+            <FaLinkedinIn /> <h3>Linkedin</h3>
           </a>
           <h3 className=" hover:text-blue-600">thastrup@gmail.com</h3>
-          <h3 className=" hover:text-blue-600">+54 9 11 3820 5005 </h3>
-          <h3 className=" hover:text-blue-600">(Argentina)</h3>
+          <h3 className=" hover:text-blue-600">(+54 )9 11 3820 5005 </h3>
+          <h3 className=" hover:text-blue-600">Buenos Aires, Argentina</h3>
         </div>
       </div>
     </div>

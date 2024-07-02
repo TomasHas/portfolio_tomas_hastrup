@@ -4,12 +4,6 @@ import WorkItem from "./WorkItem";
 import Resume from "./Resume";
 const data = [
   {
-    duration: "8/2023 - 11/2023",
-    company: "AYTHEN",
-    title: "Full Stack Web Developer",
-    details: "Internship",
-  },
-  {
     duration: "2023 - Current",
     company: "FREELANCE",
     title: "Full Stack Web Developer",
@@ -18,9 +12,16 @@ const data = [
   {
     duration: "2020 - Current",
     company: "PASIÓN EVENTOS",
-    title: "Production y Logístics",
+    title: "Production and Logístics",
     details: "Sports events logistics",
   },
+  {
+    duration: "8/2023 - 11/2023",
+    company: "AYTHEN",
+    title: "Full Stack Web Developer",
+    details: "Internship",
+  },
+
   {
     duration: "2017 – 2020",
     company: "MERVE TEXTIL",
@@ -31,7 +32,7 @@ const data = [
     duration: "2012 – 2016",
     company: "BARBARIAN RACE",
     title: "Creator/Director",
-    details: "Obstacle course Race",
+    details: "10k Obstacle Course Race",
   },
   {
     duration: "2011 - 2012",
@@ -43,7 +44,7 @@ const data = [
     duration: "2006 - 2010",
     company: "DAIMLERCHRYSLER ARGENTINA",
     title: "Marketing Manager",
-    details: "Automotive corporation",
+    details: "Automotive Corporation",
   },
 ];
 

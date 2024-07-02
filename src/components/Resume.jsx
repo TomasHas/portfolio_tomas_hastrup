@@ -20,7 +20,7 @@ export const Resume = () => {
         <div className="w-50  flex flex-row justify-center items-center cursor-pointer ">
           <LuFileSearch
             onClick={handleClick}
-            className="    h-12 w-12 p-2 text-gray-300"
+            className=" animate-pulse  h-12 w-12 p-2 text-gray-300"
           />
 
           <h3 className="md:flex md:flex-row  font-bold text-gray-300">
@@ -33,7 +33,7 @@ export const Resume = () => {
           <a href="/src/assets/TOMAS HASTRUP resume 2023.pdf" download={resume}>
             <MdOutlineFileDownload
               download={resume}
-              className="  h-11 w-11  text-gray-300"
+              className="  h-11 w-11  text-gray-300 animate-bounce"
             />
           </a>{" "}
           <h3 className=" flex flex-row   font-bold  text-gray-300">
@@ -44,7 +44,7 @@ export const Resume = () => {
 
       {showModal ? (
         <>
-          <div className="  absolute  justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="    justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-full h-full my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full h-full bg-white outline-none focus:outline-none">
