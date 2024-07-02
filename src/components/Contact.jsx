@@ -36,7 +36,7 @@ function Contact() {
             <FaLinkedinIn /> <h3>Linkedin</h3>
           </a>
           <h3 className=" hover:text-blue-600">thastrup@gmail.com</h3>
-          <h3 className=" hover:text-blue-600">(+54 )9 11 3820 5005 </h3>
+          <h3 className=" hover:text-blue-600">(+54 ) 9 11 3820 5005 </h3>
           <h3 className=" hover:text-blue-600">Buenos Aires, Argentina</h3>
         </div>
       </div>

@@ -6,7 +6,7 @@ import LogoIcons from "./LogoIcons";
 const ProjectItem = ({ img, title, src, text, stack }) => {
   return (
     <div className="flex flex-col ">
-      <div className=" relative flex items-center justify-center h-56 bg-white shadow-lg shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-700 to-blue-900">
+      <div className=" relative flex items-center justify-center h-56 bg-white shadow-lg shadow-gray-400 rounded-xl group   hover:bg-gradient-to-r from-gray-300 to-blue-900 ">
         <img
           src={img}
           alt="/"

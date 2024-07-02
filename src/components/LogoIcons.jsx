@@ -59,7 +59,7 @@ const LogoIcons = (stack) => {
           src={imageUrl}
           alt={`Image ${index + 1}`}
           style={{ width: "200px" }}
-          className=" h-6 hover:h-10"
+          className=" h-6 hover:scale-125 ease-out duration-100"
         />
       ))}
     </div>

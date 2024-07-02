@@ -12,31 +12,28 @@ export const Resume = () => {
   };
 
   return (
-    <div
-      id="resume"
-      // className="   flex flex-col  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4 "
-    >
+    <div id="resume" className="   mb-20 ">
       <div className=" flex flex-row  justify-between items-center  ">
-        <div className="w-50  flex flex-row justify-center items-center cursor-pointer ">
+        <div className="w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg shadow-orange-400 dark:shadow-white rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 ">
           <LuFileSearch
             onClick={handleClick}
             className=" animate-pulse  h-12 w-12 p-2 text-gray-300"
           />
 
-          <h3 className="md:flex md:flex-row  font-bold text-gray-300">
+          <h3 className="md:flex md:flex-row font-bold text-gray-500 dark:text-gray-300 ">
             {" "}
             View Resume
           </h3>
         </div>
 
-        <div className="  flex flex-row justify-between items-center  cursor-pointer ">
+        <div className="  flex flex-row justify-between items-center  cursor-pointer shadow-lg shadow-orange-400 dark:shadow-white  rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300">
           <a href="/src/assets/TOMAS HASTRUP resume 2023.pdf" download={resume}>
             <MdOutlineFileDownload
               download={resume}
               className="  h-11 w-11  text-gray-300 animate-bounce"
             />
           </a>{" "}
-          <h3 className=" flex flex-row   font-bold  text-gray-300">
+          <h3 className=" flex flex-row   font-bold  text-gray-500 dark:text-gray-300 ">
             Download Resume
           </h3>
         </div>
