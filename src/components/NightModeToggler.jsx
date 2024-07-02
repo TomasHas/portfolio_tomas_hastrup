@@ -24,11 +24,11 @@ function NightModeToggler() {
       {" "}
       <button onClick={handleClickLight}>
         {" "}
-        <MdOutlineLightMode className=" text-gray-400 hover:text-white hover:scale-110 ease-out duration-200 w-10 h-10 " />
+        <MdOutlineLightMode className=" text-gray-400 hover:text-white hover:scale-110 ease-out duration-200 w-5 h-5 " />
       </button>
       <button onClick={handleClickDark}>
         {" "}
-        <MdOutlineNightlight className=" text-gray-400 hover:scale-110 ease-out duration-200 hover:text-white w-10 h-10 " />
+        <MdOutlineNightlight className=" text-gray-400 hover:scale-110 ease-out duration-200 hover:text-white w-5 h-5 " />
       </button>
     </div>
   );

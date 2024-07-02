@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import NightModeToggler from "./NightModeToggler";
 import sun from "./../assets/sun.jpg";
+import sunBrigther from "./../assets/sunBrigther.webp";
+
 import moon from "./../assets/moon.webp";
 
 const Main = () => {
@@ -50,13 +52,21 @@ const Main = () => {
   }, []);
 
   return (
-    <div id="main" className=" relative">
+    <div id="main" className=" relative bg-black">
       <div className=" ">
-        <img
-          className=" w-full h-screen object-cover object-left scale-x-[-1]  "
-          src={theme === "light" ? sun : moon}
-          alt="no pic"
-        />
+        {theme === "light" ? (
+          <img
+            className=" w-full h-screen object-cover scale-110   "
+            src={sunBrigther}
+            alt="no pic"
+          />
+        ) : (
+          <img
+            className=" w-full h-screen object-cover  scale-x-[-1]  "
+            src={moon}
+            alt="no pic"
+          />
+        )}
       </div>
       <div className="  p-4 absolute top-1/4 left-1/2 w-1/2 bg-orange-500/30 ">
         <div>
