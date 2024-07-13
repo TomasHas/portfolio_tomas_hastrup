@@ -9,7 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import NightModeToggler from "./NightModeToggler";
-import sun from "./../assets/sun.jpg";
+
 import sunBrigther from "./../assets/sunBrigther.webp";
 
 import moon from "./../assets/moon.webp";
