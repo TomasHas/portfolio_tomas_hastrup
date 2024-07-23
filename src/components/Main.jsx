@@ -62,7 +62,7 @@ const Main = () => {
           />
         ) : (
           <img
-            className=" w-full h-screen  object-cover lg:object-contain  scale-x-[-1]  "
+            className=" w-full h-screen  object-cover lg:object-contain  scale-110 "
             src={moon}
             alt="no pic"
           />
@@ -71,10 +71,10 @@ const Main = () => {
       <div className="  p-4 pl-14 absolute top-1/3 left-1/2 w-1/2 rounded-s-full dark:bg-white/10  bg-orange-500/30 ">
         <div>
           <div className="  m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">
-            <h1 className=" sm:text-5xl text-4xl font-bold text-sky-500 ">
+            <h1 className=" sm:text-5xl text-4xl font-bold text-white ">
               I´m Tomas Hastrup
             </h1>
-            <h2 className=" flex sm:text-3xl text-2xl pt-4 text-blue-300">
+            <h2 className=" flex sm:text-3xl text-2xl pt-4 text-gray-300">
               <TypeAnimation
                 sequence={[
                   "I´m a Full Stack Web Developer",

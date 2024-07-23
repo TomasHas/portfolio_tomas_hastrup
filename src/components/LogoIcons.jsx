@@ -52,7 +52,7 @@ const LogoIcons = (stack) => {
   // );y
 
   return (
-    <div className=" mt-5 flex flex-row justify-start items-center h-10 w-full rounded-full bg-gray-300 shadow-xl">
+    <div className=" mt-5 flex flex-row justify-start items-center h-10 w-full rounded-full bg-gray-300 shadow-md shadow-white">
       {stackArray.map((imageUrl, index) => (
         <img
           key={index}

@@ -15,7 +15,7 @@ const SideNav = () => {
     setNav(!nav);
   };
   const buttonStyle =
-    "w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-gray-400 shadow-lg shadow-orange-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100";
+    "w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-white shadow-lg shadow-orange-400 bg-white m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100";
   return (
     <div>
       <div className=" fixed  p-2 flex  w-full  top-0 opacity-50 left-0 z-[99] md:hidden sm:hidden">
@@ -71,7 +71,7 @@ const SideNav = () => {
         <div className=" flex flex-col ">
           <a
             href="#main"
-            className="w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-gray-400 shadow-lg shadow-orange-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
+            className="w-[75%] flex justify-center items-center rounded-full dark:bg-gray-900 dark:shadow-white dark:text-white shadow-lg shadow-orange-400 bg-white m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100"
           >
             <AiOutlineHome size={20} />
           </a>
