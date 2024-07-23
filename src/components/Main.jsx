@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import NightModeToggler from "./NightModeToggler";
 
-import sunBrigther from "./../assets/sunBrigther.webp";
+// import sunBrigther from "./../assets/sunBrigther.webp";
 import sun from "./../assets/sun.jpg";
 import moon from "./../assets/moon.webp";
 
