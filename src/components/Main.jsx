@@ -11,7 +11,7 @@ import {
 import NightModeToggler from "./NightModeToggler";
 
 import sunBrigther from "./../assets/sunBrigther.webp";
-
+import sun from "./../assets/sun.jpg";
 import moon from "./../assets/moon.webp";
 
 const Main = () => {
@@ -57,7 +57,7 @@ const Main = () => {
         {theme === "light" ? (
           <img
             className=" w-full h-screen object-cover scale-110   "
-            src={sunBrigther}
+            src={sun}
             alt="no pic"
           />
         ) : (
