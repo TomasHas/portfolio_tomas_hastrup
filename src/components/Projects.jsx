@@ -22,7 +22,7 @@ const Projects = () => {
       <div className=" grid sm:grid-cols-2 gap-12 object-cover">
         <ProjectItem
           img={pomodoro}
-          title={"Freelance Dummy Project"}
+          title={"pomodoro project"}
           src={"https://all-timers-tau.vercel.app/"}
           text="Cloning https://pomofocus.io/"
           stack={["javascript", "vite", "css", "tailwind"]}
