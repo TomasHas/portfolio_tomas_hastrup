@@ -7,6 +7,7 @@ import alpha from "./../assets/alpha1.jpg";
 import and from "./../assets/and.jpg";
 import pokemon from "./../assets/pokemon.jpg";
 import petVenture from "./../assets/petVenture.jpg";
+import pomodoro from "./../assets/pomodorothumb.jpg";
 
 const Projects = () => {
   return (
@@ -19,6 +20,13 @@ const Projects = () => {
       </h1>
       <p className=" text-center py-8  text-gray-200"></p>
       <div className=" grid sm:grid-cols-2 gap-12 object-cover">
+        <ProjectItem
+          img={pomodoro}
+          title={"Freelance Dummy Project"}
+          src={"https://all-timers-tau.vercel.app/"}
+          text="Cloning https://pomofocus.io/"
+          stack={["javascript", "vite", "css", "tailwind"]}
+        />
         <ProjectItem
           img={HomeStep}
           title={"Step by Step"}
@@ -75,7 +83,7 @@ const Projects = () => {
           src={"https://schein-esquivel.vercel.app/"}
           text="Dummy website for architecture firm. Work in progress."
           stack={["javascript", "vite", "css"]}
-        />
+        />{" "}
       </div>
     </div>
   );
