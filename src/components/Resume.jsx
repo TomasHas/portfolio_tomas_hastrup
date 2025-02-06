@@ -1,7 +1,7 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 // import { MdPageview } from "react-icons/md";
 import { LuFileSearch } from "react-icons/lu";
-import resume from "./../assets/TOMAS HASTRUP resume 2023.pdf";
+import resume from "./../assets/Tomas Hastrup Full Stack Dev 2025.pdf";
 import { useState } from "react";
 
 export const Resume = () => {
