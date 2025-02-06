@@ -14,30 +14,31 @@ export const Resume = () => {
   };
 
   return (
-    <div id="resume" className="   mb-20 ">
+    <div id="resume" className="   mb-20 mt-8 ">
       <div className=" flex flex-row  justify-between items-center  ">
         <div
           onClick={handleClick}
-          className="w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg shadow-orange-400 dark:shadow-white rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 "
+          className="w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg shadow-white dark:shadow-white rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 "
         >
           <LuFileSearch className=" animate-pulse  h-12 w-12 p-2 text-gray-300" />
 
-          <h3 className="md:flex md:flex-row font-bold text-gray-500 dark:text-gray-300 ">
+          <h3 className="md:flex md:flex-row font-bold text-gray-300 dark:text-gray-300 ">
             {" "}
             View Resume
           </h3>
         </div>
 
-        <div className="  flex flex-row justify-between items-center  cursor-pointer shadow-lg shadow-orange-400 dark:shadow-white  rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300">
+        <div className="  flex flex-row justify-between items-center  cursor-pointer shadow-lg shadow-white dark:shadow-white  rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300">
           <a
             href="/src/assets/Tomas Hastrup Full Stack Dev 2025.pdf"
             download={resume}
+            className=" flex flex-row gap-1"
           >
             <MdOutlineFileDownload
               download={resume}
               className="  h-11 w-11  text-gray-300 animate-bounce"
             />{" "}
-            <h3 className=" flex flex-row   font-bold  text-gray-500 dark:text-gray-300 ">
+            <h3 className=" flex flex-row   font-bold  text-gray-200 dark:text-gray-300 ">
               Download Resume
             </h3>
           </a>{" "}

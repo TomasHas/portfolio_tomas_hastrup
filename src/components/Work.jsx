@@ -54,10 +54,10 @@ const Work = () => {
       id="work"
       className="flex flex-col  mt-16  min-h-screen h-full max-w-[1040px] m-auto md:pl-20 p-4 "
     >
-      <h1 className="  text-4xl font-bold text-center mt-7 text-gray-400">
+      <h1 className="  text-4xl font-bold text-center mt-7 text-gray-400 mb-3">
         Work History
       </h1>
-      <div className=" py-14">
+      <div className=" py-14  bg-slate-400 p-8 rounded-3xl">
         {" "}
         {data.map((item, idx) => (
           <WorkItem

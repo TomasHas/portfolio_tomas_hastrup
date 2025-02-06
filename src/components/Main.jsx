@@ -11,11 +11,12 @@ import {
 import NightModeToggler from "./NightModeToggler";
 
 // import sunBrigther from "./../assets/sunBrigther.webp";
-import sun from "./../assets/sun.jpg";
-import moon from "./../assets/moon.webp";
+import sun from "./../assets/sun.png";
+import moon from "./../assets/moon.png";
 
 const Main = () => {
   const [theme, setTheme] = useState("light");
+  const [bgImage, setbgImage] = useState("./day sky.png");
   useEffect(() => {
     // Select the <html> element
     const htmlElement = document.documentElement;
@@ -30,9 +31,11 @@ const Main = () => {
           console.log("Class attribute changed!");
           if (htmlElement.classList.contains("dark")) {
             setTheme("dark");
+            setbgImage("./night sky.png");
             console.log("Dark mode enabled");
           } else {
             setTheme("light");
+            setbgImage("./day sky.png");
             console.log("Dark mode disabled");
           }
         }
@@ -52,17 +55,28 @@ const Main = () => {
   }, []);
 
   return (
-    <div id="main" className=" relative bg-black">
-      <div className=" ">
+    <div id="main" className={`relative  `}>
+      <div
+        style={{
+          // backgroundImage: `url('./day sky.png')`,
+          backgroundImage: `url('${bgImage}')`,
+
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+          width: "100%",
+          transition: "background 0.5s ease-in-out", // Smooth transition
+        }}
+      >
         {theme === "light" ? (
           <img
-            className=" w-full h-screen object-cover scale-110   "
+            className=" w-full h-screen object-contain    "
             src={sun}
             alt="no pic"
           />
         ) : (
           <img
-            className=" w-full h-screen  object-cover lg:object-contain  scale-110 "
+            className=" w-full h-screen  object-cover lg:object-contain  scale-100 "
             src={moon}
             alt="no pic"
           />

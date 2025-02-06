@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className=" bg-orange-100 dark:bg-gray-900 overflow-hidden">
+    // <div className=" overflow-hidden">
+    <div className=" bg-blue-800 dark:bg-gray-900 overflow-hidden">
       <SideNav />
       <Main />
       <Projects />
