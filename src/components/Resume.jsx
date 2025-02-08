@@ -14,7 +14,7 @@ export const Resume = () => {
   };
 
   return (
-    <div id="resume" className="   mb-20 mt-8 ">
+    <div id="resume" className=" w-[50%]  mb-20 mt-8 ">
       <div className=" flex flex-row  justify-between items-center  ">
         <div
           onClick={handleClick}
@@ -38,7 +38,7 @@ export const Resume = () => {
               download={resume}
               className="  h-11 w-11  text-gray-300 animate-bounce"
             />{" "}
-            <h3 className=" flex flex-row   font-bold  text-gray-200 dark:text-gray-300 ">
+            <h3 className=" flex flex-row items-center font-bold  text-gray-200 dark:text-gray-300 ">
               Download Resume
             </h3>
           </a>{" "}

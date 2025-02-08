@@ -11,12 +11,13 @@ import {
 import NightModeToggler from "./NightModeToggler";
 
 // import sunBrigther from "./../assets/sunBrigther.webp";
-import sun from "./../assets/sun.png";
+// import sun from "./../assets/sun.png";
 import moon from "./../assets/moon.png";
+// const sun2 = "./sunshine.png";
 
 const Main = () => {
   const [theme, setTheme] = useState("light");
-  const [bgImage, setbgImage] = useState("./day sky.png");
+  const [bgImage, setbgImage] = useState("./day-sky.png");
   useEffect(() => {
     // Select the <html> element
     const htmlElement = document.documentElement;
@@ -31,11 +32,11 @@ const Main = () => {
           console.log("Class attribute changed!");
           if (htmlElement.classList.contains("dark")) {
             setTheme("dark");
-            setbgImage("./night sky.png");
+            setbgImage("./night-sky.png");
             console.log("Dark mode enabled");
           } else {
             setTheme("light");
-            setbgImage("./day sky.png");
+            setbgImage("./day-sky.png");
             console.log("Dark mode disabled");
           }
         }
@@ -65,15 +66,11 @@ const Main = () => {
           backgroundPosition: "center",
           height: "100vh",
           width: "100%",
-          transition: "background 0.5s ease-in-out", // Smooth transition
+          transition: "background 0.5s ease-in", // Smooth transition
         }}
       >
         {theme === "light" ? (
-          <img
-            className=" w-full h-screen object-contain    "
-            src={sun}
-            alt="no pic"
-          />
+          <img className=" w-full h-screen object-contain    " alt="no pic" />
         ) : (
           <img
             className=" w-full h-screen  object-cover lg:object-contain  scale-100 "
@@ -86,18 +83,18 @@ const Main = () => {
         <div>
           <div className="  m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">
             <h1 className=" sm:text-5xl text-4xl font-bold text-white ">
-              I´m Tomas Hastrup
+              Tomas Hastrup
             </h1>
             <h2 className=" flex sm:text-3xl text-2xl pt-4 text-gray-300">
               <TypeAnimation
                 sequence={[
-                  "I´m a Full Stack Web Developer",
+                  "Full Stack Web Developer",
                   2000,
-                  "with over 2 years of experience",
+                  "Over 2 years experience",
                   2000,
-                  "living in Argentina ",
+                  "Based in Argentina",
                   2000,
-                  "and I speak fluent english",
+                  "Fluent English",
                   2000,
                   // "and also have background in marketing",
                   // 2000,
