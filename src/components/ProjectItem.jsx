@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import LogoIcons from "./LogoIcons";
+
 // eslint-disable-next-line react/prop-types
 const ProjectItem = ({ img, title, src, text, stack }) => {
   return (
@@ -10,7 +11,7 @@ const ProjectItem = ({ img, title, src, text, stack }) => {
         <img
           src={img}
           alt="/"
-          className=" rounded-xl group-hover:opacity-10  "
+          className=" object-cover rounded-xl group-hover:opacity-10  "
         />
 
         <div //hidden

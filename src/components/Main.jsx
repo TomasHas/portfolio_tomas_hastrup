@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+import { useTheme } from "../hooks";
 import {
   // FaTwitter,
   // FaFacebook,
@@ -8,78 +9,31 @@ import {
   // FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+
 import NightModeToggler from "./NightModeToggler";
 
 // import sunBrigther from "./../assets/sunBrigther.webp";
 // import sun from "./../assets/sun.png";
-import moon from "./../assets/moon.png";
+// import moon from "./../assets/moon.png";
 // const sun2 = "./sunshine.png";
 
 const Main = () => {
-  const [theme, setTheme] = useState("light");
-  const [bgImage, setbgImage] = useState("./day-sky.png");
-  useEffect(() => {
-    // Select the <html> element
-    const htmlElement = document.documentElement;
+  const theme = useTheme();
 
-    // Create a MutationObserver instance and define the callback function
-    const observer = new MutationObserver((mutationsList) => {
-      for (let mutation of mutationsList) {
-        if (
-          mutation.type === "attributes" &&
-          mutation.attributeName === "class"
-        ) {
-          console.log("Class attribute changed!");
-          if (htmlElement.classList.contains("dark")) {
-            setTheme("dark");
-            setbgImage("./night-sky.png");
-            console.log("Dark mode enabled");
-          } else {
-            setTheme("light");
-            setbgImage("./day-sky.png");
-            console.log("Dark mode disabled");
-          }
-        }
-      }
-    });
-
-    // Configure the observer to listen for attribute changes
-    const config = { attributes: true };
-
-    // Start observing the <html> element
-    observer.observe(htmlElement, config);
-
-    // Cleanup function to disconnect the observer when the component unmounts
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  console.log(theme.activeTheme.heroImage);
 
   return (
     <div id="main" className={`relative  `}>
-      <div
-        style={{
-          // backgroundImage: `url('./day sky.png')`,
-          backgroundImage: `url('${bgImage}')`,
-
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "100vh",
-          width: "100%",
-          transition: "background 0.5s ease-in", // Smooth transition
-        }}
-      >
-        {theme === "light" ? (
-          <img className=" w-full h-screen object-contain    " alt="no pic" />
-        ) : (
-          <img
-            className=" w-full h-screen  object-cover lg:object-contain  scale-100 "
-            src={moon}
-            alt="no pic"
-          />
-        )}
+      <div>
+        <img
+          className=" w-full h-screen  object-cover    "
+          src={theme.activeTheme.heroImage}
+          alt="no pic"
+        />
       </div>
-      <div className="  p-4 pl-14 absolute top-1/3 left-1/2 w-1/2 rounded-s-full dark:bg-white/10  bg-orange-500/30 ">
+      <div
+        className={`  p-4 pl-14 absolute top-1/3 left-1/2 w-1/2 rounded-s-full bg-white/30 animate-slideInFromRight`}
+      >
         <div>
           <div className="  m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">
             <h1 className=" sm:text-5xl text-4xl font-bold text-white ">

@@ -2,6 +2,7 @@
 import React from "react";
 import WorkItem from "./WorkItem";
 import Resume from "./Resume";
+import { useTheme } from "../hooks";
 const data = [
   {
     duration: "2023 - Current",
@@ -49,12 +50,15 @@ const data = [
 ];
 
 const Work = () => {
+  const theme = useTheme();
   return (
     <div
       id="work"
       className="flex flex-col  mt-16  min-h-screen h-full items-center m-auto md:pl-20 p-4 "
     >
-      <h1 className="  text-4xl font-bold text-center mt-7 text-gray-400 mb-16">
+      <h1
+        className={`text-4xl font-bold text-center mt-7 ${theme.activeTheme.titleText} mb-16`}
+      >
         Work History
       </h1>
       <div className=" py-14  bg-slate-400 p-8 rounded-3xl w-[50%]">

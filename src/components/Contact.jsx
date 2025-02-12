@@ -7,6 +7,7 @@ import {
   // FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+
 function Contact() {
   return (
     <div
@@ -16,7 +17,9 @@ function Contact() {
       <div className="  flex h-screen flex-col justify-center items-center ">
         <div className="  inset-x-0 top-0  flex  flex-col justify-start">
           {" "}
-          <h1 className=" text-4xl hidden p-4 font-bold md:block text-center text-gray-300 ">
+          <h1
+            className={`text-4xl hidden p-4 font-bold md:block text-center text-white`}
+          >
             {" "}
             Contact
           </h1>

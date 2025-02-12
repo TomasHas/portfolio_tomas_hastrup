@@ -3,8 +3,10 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { LuFileSearch } from "react-icons/lu";
 import resume from "./../assets/Tomas Hastrup Full Stack Dev 2025.pdf";
 import { useState } from "react";
+import { useTheme } from "../hooks";
 
 export const Resume = () => {
+  const theme = useTheme();
   const [showModal, setShowModal] = useState(false);
 
   const handleClick = () => {
@@ -18,17 +20,23 @@ export const Resume = () => {
       <div className=" flex flex-row  justify-between items-center  ">
         <div
           onClick={handleClick}
-          className="w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg shadow-white dark:shadow-white rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 "
+          className={`w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 ${theme.activeTheme.buttonColor} ${theme.activeTheme.buttonShadow} `}
         >
-          <LuFileSearch className=" animate-pulse  h-12 w-12 p-2 text-gray-300" />
+          <LuFileSearch
+            className={` animate-pulse  h-12 w-12 p-2  ${theme.activeTheme.buttonText}`}
+          />
 
-          <h3 className="md:flex md:flex-row font-bold text-gray-300 dark:text-gray-300 ">
+          <h3
+            className={`md:flex md:flex-row font-bold ${theme.activeTheme.buttonText}`}
+          >
             {" "}
             View Resume
           </h3>
         </div>
 
-        <div className="  flex flex-row justify-between items-center  cursor-pointer shadow-lg shadow-white dark:shadow-white  rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300">
+        <div
+          className={`  flex flex-row justify-between items-center  cursor-pointer shadow-lg ${theme.activeTheme.buttonShadow}   rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 ${theme.activeTheme.buttonColor}`}
+        >
           <a
             href="/src/assets/Tomas Hastrup Full Stack Dev 2025.pdf"
             download={resume}
@@ -36,9 +44,11 @@ export const Resume = () => {
           >
             <MdOutlineFileDownload
               download={resume}
-              className="  h-11 w-11  text-gray-300 animate-bounce"
+              className={`  h-11 w-11 ${theme.activeTheme.buttonText} animate-bounce`}
             />{" "}
-            <h3 className=" flex flex-row items-center font-bold  text-gray-200 dark:text-gray-300 ">
+            <h3
+              className={` flex flex-row items-center font-bold  ${theme.activeTheme.buttonText} `}
+            >
               Download Resume
             </h3>
           </a>{" "}

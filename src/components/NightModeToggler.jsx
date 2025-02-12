@@ -1,24 +1,27 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
+import { useTheme } from "../hooks";
 function NightModeToggler() {
-  const [theme, setTheme] = useState("light");
+  const theme = useTheme();
+  // const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector("html").classList.add("dark");
-    } else {
-      document.querySelector("html").classList.remove("dark");
-    }
-  }, [theme]);
+  // useEffect(() => {
+  //   if (theme === "dark") {
+  //     document.querySelector("html").classList.add("dark");
+  //   } else {
+  //     document.querySelector("html").classList.remove("dark");
+  //   }
+  // }, [theme]);
 
   const handleClickLight = () => {
-    setTheme("light");
+    // setTheme("light");
+    theme.toggleTheme("light");
   };
   const handleClickDark = () => {
-    setTheme("dark");
+    theme.toggleTheme("dark");
   };
-  console.log(theme);
+
   return (
     <div className=" absolute flex flex-row gap-5 top-5 right-6 cursor-pointer ">
       {" "}

@@ -4,7 +4,22 @@ export default {
 
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slideInFromRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        slideInFromRight: "slideInFromRight 1.5s ease-out",
+        slideInFromLeft: "slideInFromLeft 1s ease-out",
+      },
+    },
   },
   plugins: [],
 };
