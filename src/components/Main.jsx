@@ -10,8 +10,6 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import NightModeToggler from "./NightModeToggler";
-
 // import sunBrigther from "./../assets/sunBrigther.webp";
 // import sun from "./../assets/sun.png";
 // import moon from "./../assets/moon.png";
@@ -66,7 +64,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <NightModeToggler />
+
       <div className=" flex flex-row items-center absolute bottom-2 right-6  fill-gray-300 gap-5">
         <a href="https://github.com/TomasHas">
           <FaGithub

@@ -4,34 +4,32 @@ import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 import { useTheme } from "../hooks";
 function NightModeToggler() {
   const theme = useTheme();
-  // const [theme, setTheme] = useState("light");
 
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     document.querySelector("html").classList.add("dark");
-  //   } else {
-  //     document.querySelector("html").classList.remove("dark");
-  //   }
-  // }, [theme]);
+  console.log(theme.activeTheme.mode);
 
-  const handleClickLight = () => {
-    // setTheme("light");
-    theme.toggleTheme("light");
-  };
-  const handleClickDark = () => {
-    theme.toggleTheme("dark");
+  const handleClick = () => {
+    if (theme.activeTheme.mode === "light") {
+      theme.toggleTheme("dark");
+    } else {
+      theme.toggleTheme("light");
+    }
   };
 
   return (
-    <div className=" absolute flex flex-row gap-5 top-5 right-6 cursor-pointer ">
-      {" "}
-      <button onClick={handleClickLight}>
-        {" "}
-        <MdOutlineLightMode className=" text-gray-400 hover:text-white hover:scale-110 ease-out duration-200 w-5 h-5 " />
-      </button>
-      <button onClick={handleClickDark}>
-        {" "}
-        <MdOutlineNightlight className=" text-gray-400 hover:scale-110 ease-out duration-200 hover:text-white w-5 h-5 " />
+    <div>
+      <button
+        onClick={handleClick}
+        className={`w-[75%] flex justify-center items-center rounded-full ${theme.activeTheme.buttonShadow} shadow-lg ${theme.activeTheme.iconBg} ${theme.activeTheme.iconText}   m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100  `}
+      >
+        {theme.activeTheme.mode === "dark" ? (
+          <MdOutlineLightMode
+            className={`${theme.activeTheme.textColor}  hover:text-gray-400 hover:scale-110 ease-out duration-200 w-5 h-5 `}
+          />
+        ) : (
+          <MdOutlineNightlight
+            className={`${theme.activeTheme.textColor}  ease-out duration-200 hover:text-gray-400 w-5 h-5 `}
+          />
+        )}
       </button>
     </div>
   );

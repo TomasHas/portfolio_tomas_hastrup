@@ -5,6 +5,7 @@ export const ThemeContext = createContext();
 // eslint-disable-next-line react/prop-types
 export function ThemeProvider({ children }) {
   const [darkThemeDefault] = useState({
+    mode: "dark",
     heroImage: "./night-sky.png",
     titleText: "text-white",
     bgColor: "bg-gray-900",
@@ -15,6 +16,7 @@ export function ThemeProvider({ children }) {
     buttonShadow: "shadow-white",
   });
   const [lightThemeDefault] = useState({
+    mode: "light",
     heroImage: "./day-sky.png",
     titleText: "text-black",
     bgColor: "bg-white",

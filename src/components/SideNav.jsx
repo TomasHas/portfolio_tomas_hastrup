@@ -6,6 +6,7 @@ import {
   AiOutlineProject,
   AiOutlineMail,
 } from "react-icons/ai";
+import NightModeToggler from "./NightModeToggler";
 // import { BsPerson } from "react-icons/bs";
 import { MdOutlineGridView } from "react-icons/md";
 import { useTheme } from "../hooks";
@@ -71,6 +72,7 @@ const SideNav = () => {
       )}
       <div className=" md:block sm:block hidden fixed top-[20%] z-10 animate-slideInFromLeft">
         <div className=" flex flex-col ">
+          {" "}
           <a
             href="#main"
             className={`w-[75%] flex justify-center items-center rounded-full ${theme.activeTheme.buttonShadow} shadow-lg ${theme.activeTheme.iconBg} ${theme.activeTheme.iconText}   m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100  `}
@@ -92,8 +94,9 @@ const SideNav = () => {
           <a href="#contact" className={buttonStyle}>
             <AiOutlineMail size={20} />
           </a>
-        </div>
-      </div>
+        </div>{" "}
+        <NightModeToggler />
+      </div>{" "}
     </div>
   );
 };
