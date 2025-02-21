@@ -52,13 +52,13 @@ const LogoIcons = (stack) => {
   // );y
 
   return (
-    <div className=" mt-5 flex flex-row justify-start items-center h-10 w-full rounded bg-gray-300 ">
+    <div className="  flex flex-row justify-between items-center h-10 w-full  bg-gray-100 px-2">
       {stackArray.map((imageUrl, index) => (
         <img
           key={index}
           src={imageUrl}
           alt={`Image ${index + 1}`}
-          style={{ width: "200px" }}
+          style={{ width: "30px" }}
           className=" h-6 hover:scale-125 ease-out duration-100"
         />
       ))}

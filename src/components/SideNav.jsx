@@ -78,19 +78,13 @@ const SideNav = () => {
             className={`w-[75%] flex justify-center items-center rounded-full ${theme.activeTheme.buttonShadow} shadow-lg ${theme.activeTheme.iconBg} ${theme.activeTheme.iconText}   m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-100  `}
           >
             <AiOutlineHome size={20} />
-          </a>
-          <a href="#work" className={buttonStyle}>
-            <MdOutlineGridView size={20} />
           </a>{" "}
           <a href="#projects" className={buttonStyle}>
             <AiOutlineProject size={20} />
           </a>{" "}
-          {/* <a
-            href="#resume"
-            className={buttonStyle}
-          >
-            <BsPerson size={20} />
-          </a>{" "} */}
+          <a href="#work" className={buttonStyle}>
+            <MdOutlineGridView size={20} />
+          </a>{" "}
           <a href="#contact" className={buttonStyle}>
             <AiOutlineMail size={20} />
           </a>

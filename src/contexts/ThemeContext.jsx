@@ -9,15 +9,15 @@ export function ThemeProvider({ children }) {
     heroImage: "./night-sky.png",
     titleText: "text-white",
     bgColor: "bg-gray-900",
-    buttonColor: "bg-gray-900",
+    buttonColor: "bg-gray-800",
     buttonText: "text-white",
-    iconBg: "bg-gray-900",
+    iconBg: "bg-gray-800",
     iconText: "text-white",
     buttonShadow: "shadow-white",
   });
   const [lightThemeDefault] = useState({
     mode: "light",
-    heroImage: "./day-sky.png",
+    heroImage: "./sunny-sky.png",
     titleText: "text-black",
     bgColor: "bg-white",
     buttonColor: "bg-white",

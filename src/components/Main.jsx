@@ -24,13 +24,13 @@ const Main = () => {
     <div id="main" className={`relative  `}>
       <div>
         <img
-          className=" w-full h-screen  object-cover    "
+          className=" w-full h-screen  object-cover bg-cover bg-center bg-no-repeat min-h-screen bg-blue-400  "
           src={theme.activeTheme.heroImage}
           alt="no pic"
         />
       </div>
       <div
-        className={`  p-4 pl-14 absolute top-1/3 left-1/2 w-1/2 rounded-s-full bg-white/30 animate-slideInFromRight`}
+        className={`  p-4 pl-14 absolute top-1/3 md:left-1/2 md:w-1/2 md:rounded-s-full bg-white/30 animate-slideInFromRight`}
       >
         <div>
           <div className="  m-auto h-full w-full flex flex-col justify-center lg:items-start items-center ">

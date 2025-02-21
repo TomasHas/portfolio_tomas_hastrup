@@ -16,8 +16,8 @@ export const Resume = () => {
   };
 
   return (
-    <div id="resume" className=" w-[50%]  mb-20 mt-8 ">
-      <div className=" flex flex-row  justify-between items-center  ">
+    <div id="resume" className="   w-7/12 mb-20 mt-8 ">
+      <div className=" flex flex-col md:flex-row gap-3 justify-between items-center  ">
         <div
           onClick={handleClick}
           className={`w-50  flex flex-row justify-center items-center cursor-pointer shadow-lg rounded-full pl-6 pr-6 hover:scale-105 ease-out duration-300 ${theme.activeTheme.buttonColor} ${theme.activeTheme.buttonShadow} `}

@@ -1,0 +1,84 @@
+/* SlideFade.module.css */
+
+.projects {
+  background-color: #6e45e2;
+}
+
+.slideFadeIn {
+  animation: slideFadeIn 0.8s ease-out forwards;
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 1s ease-in forwards;
+}
+
+.slideInFromRight {
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    visibility 0.5s; /* Add visibility to transition */
+}
+
+.slideInFromRight.animate {
+  visibility: visible; /* Show when animating */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.scrollAnimation {
+  width: 200px;
+  height: 100px;
+  margin: 100vh auto;
+  background: linear-gradient(45deg, #6e45e2, #88d3ce);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
