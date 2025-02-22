@@ -84,20 +84,20 @@ export const data = [
     details: "Textile trading",
   },
   {
-    duration: "2012 – 2016",
+    duration: "2012 – 2017",
     company: "BARBARIAN RACE",
     title: "Creator/Director",
     details: "10k Obstacle Course Race",
   },
   {
     duration: "2011 - 2012",
-    company: "COLCAR MERBUS S.A.",
+    company: "COLCAR",
     title: "Marketing Manager",
     details: "Mercedes-Benz dealership",
   },
   {
     duration: "2006 - 2010",
-    company: "DAIMLERCHRYSLER ARGENTINA",
+    company: "DAIMLER-CHRYSLER",
     title: "Marketing Manager",
     details: "Automotive Corporation",
   },

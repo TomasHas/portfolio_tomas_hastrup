@@ -17,7 +17,7 @@ const Work = () => {
       >
         Work History
       </h1>
-      <div className=" py-14  bg-slate-400 p-8 rounded-3xl md:w-7/12 ">
+      <div className=" py-14  bg-slate-400 p-8 rounded-3xl w-96 lg:w-7/12 ">
         {" "}
         {data.map((item, idx) => (
           <WorkItem
