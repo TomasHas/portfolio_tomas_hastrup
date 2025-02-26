@@ -46,9 +46,9 @@ const Projects = () => {
         Projects
       </h1>
 
-      <ul className=" flex flex-col gap-6 items-center ">
+      <ul className=" flex flex-col gap-6 items-center max-w-10/12 ">
         {projectList.map((t, i) => (
-          <li key={i}>
+          <li key={i} className=" w-screen">
             <ProjectItem
               img={t.img}
               title={t.title}

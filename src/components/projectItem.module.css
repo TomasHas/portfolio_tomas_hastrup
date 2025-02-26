@@ -1,0 +1,30 @@
+.card-container {
+}
+
+@keyframes expand-size {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 110%;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: yellow;
+  }
+  100% {
+    background: green;
+  }
+}
+.card {
+  /* opacity: 0; */
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
